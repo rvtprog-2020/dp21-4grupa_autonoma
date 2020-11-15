@@ -1,0 +1,379 @@
+html{
+    background-color: #BAE6FF ;
+    height: 1000px;
+}
+
+.blueBg {
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    left: 0px;
+    top: 0px;
+    background: #25678C;
+}
+
+.autonoma {
+    position: absolute;
+    width: 304px;
+    height: 84px;
+    left: 600px;
+    top: -34.5px;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFFFFF;
+    font-family: Roboto-regular;
+    font-weight: bold;
+}
+
+.img {
+    position: absolute;
+    width: 113px;
+    height: 107px;
+    left: 410px;
+    top: 12px;
+}
+
+.img#second {
+    position: absolute;
+    left: 960px;
+}
+
+.whiteBg {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 130px;
+    background: #FFFFFF;
+}
+
+.administrators {
+    position: absolute;
+    color: #25678C;
+    font-size: 40px;
+    font-family: Roboto;
+    top: -30px;
+    left: 617px;
+    font-weight: bold;
+}
+
+.box#one {
+    position: absolute;
+    width: 306px;
+    height: 49px;
+    left: 99px;
+    top: 250px;
+    background: #FFFFFF;
+}
+
+.box#two {
+    position: absolute;
+    width: 306px;
+    height: 49px;
+    left: 99px;
+    top: 320px;
+    background: #FFFFFF;
+}
+
+.box#three {
+    position: absolute;
+    width: 306px;
+    height: 49px;
+    left: 99px;
+    top: 390px;
+    background: #FFFFFF;
+}
+
+.box#four {
+    position: absolute;
+    width: 306px;
+    height: 49px;
+    left: 99px;
+    top: 460px;
+    background: #FFFFFF;
+}
+
+.box#five {
+    position: absolute;
+    width: 306px;
+    height: 49px;
+    left: 99px;
+    top: 530px;
+    background: #FFFFFF;
+}
+
+.nomasp {
+    position: absolute;
+    width: 170px;
+    height: 28px;
+    left: 72px;
+    top: -14px;
+    font-family: Roboto-regular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.marka {
+    position: absolute;
+    width: 170px;
+    height: 28px;
+    left: 114.5px;
+    top: -14px;
+    font-family: Roboto-regular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.modelis {
+    position: absolute;
+    width: 170px;
+    height: 28px;
+    left: 104px;
+    top: -14px;
+    font-family: Roboto-regular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.gads {
+    position: absolute;
+    width: 170px;
+    height: 28px;
+    left: 117px;
+    top: -14px;
+    font-family: Roboto-regular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.cena {
+    position: absolute;
+    width: 170px;
+    height: 28px;
+    left: 117px;
+    top: -14px;
+    font-family: Roboto-regular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.box#six {
+    position: absolute;
+    width: 431px;
+    height: 49px;
+    left: 442px;
+    top: 250px;
+    background: #FFFFFF;
+}
+
+.box#seven {
+    position: absolute;
+    width: 431px;
+    height: 49px;
+    left: 442px;
+    top: 320px;
+    background: #FFFFFF;
+}
+
+.box#eight {
+    position: absolute;
+    width: 431px;
+    height: 49px;
+    left: 442px;
+    top: 390px;
+    background: #FFFFFF;
+}
+
+.box#nine {
+    position: absolute;
+    width: 431px;
+    height: 49px;
+    left: 442px;
+    top: 460px;
+    background: #FFFFFF;
+}
+
+.box#ten {
+    position: absolute;
+    width: 431px;
+    height: 49px;
+    left: 442px;
+    top: 530px;
+    background: #FFFFFF;
+}
+
+.tria {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 390px;
+    top: 14px;
+}
+
+.whitebox {
+    position: absolute;
+    width: 358px;
+    height: 30px;
+    left: 99px;
+    top: 600px;
+    background: #FFFFFF;
+}
+
+.ja {
+    position: absolute;
+    width: 240px;
+    height: 23px;
+    left: 93px;
+    font-family: Roboto-regular;
+    font-size: 22px;
+    color: #000000;
+    top: -22px;
+}
+
+.greybox {
+    position: absolute;
+    width: 835px;
+    height: 114px;
+    left: 99px;
+    top: 650px;
+    background: #C4C4C4;
+}
+
+.auto {
+    position: absolute;
+    width: 175px;
+    height: 26px;
+    left: 30px;
+    font-family: Roboto-regular;
+    font-size: 14px;
+    color: #000000;
+}
+
+.auto#seconda {
+    top: 30px
+}
+
+.rezerv {
+    position: absolute;
+    width: 341px;
+    height: 26px;
+    left: 400px;
+    font-family: Roboto-regular;
+    font-size: 14px;
+    color: #000000;
+    top: 0px;
+}
+
+.navrezerv {
+    position: absolute;
+    width: 341px;
+    height: 26px;
+    left: 400px;
+    font-family: Roboto-regular;
+    font-size: 14px;
+    color: #000000;
+    top: 30px;
+}
+
+.btn {
+    position: absolute;
+    width: 75px;
+    height: 27px;
+    left: 740px;
+    top: 13px;
+    background: #0063F9;
+    border-radius: 31px;
+    outline: none;
+    outline-offset: none;
+    border: none;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn#secondb {
+    top: 45px;
+}
+
+.whitebox#secondc{
+    top: 785px;
+}
+
+.ien {
+    position: absolute;
+    width: 240px;
+    height: 23px;
+    left: 93px;
+    font-family: Roboto-regular;
+    font-size: 22px;
+    color: #000000;
+    top: -22px;
+}
+
+.greybox#secondd {
+    width: 590px;
+    height: 144px;
+    left: 99px;
+    top: 835px;
+}
+
+.piev {
+    position: absolute;
+    width: 372px;
+    height: 55px;
+    left: 974px;
+    top: 290px;
+    background: #0063F9;
+    border-radius: 31px;
+    outline: none;
+    outline-offset: none;
+    border: none;
+    font-family: Roboto-thin;
+    font-size: 36px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#seconde {
+    top: 434px;
+}
+
+.logo {
+    position: absolute;
+    width: 360px;
+    height: 333px;
+    left: 1094px;
+    top: 640px;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Medium.ttf)
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(fonts/Roboto-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Roboto-thin';
+    src: url(fonts/Roboto-Thin.ttf)
+}

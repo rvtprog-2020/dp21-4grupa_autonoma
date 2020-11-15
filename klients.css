@@ -1,0 +1,247 @@
+html{
+    background-color: #BAE6FF ;
+}
+
+.blueBg {
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    left: 0px;
+    top: 0px;
+    background: #25678C;
+}
+
+.autonoma {
+    position: absolute;
+    width: 304px;
+    height: 84px;
+    left: 600px;
+    top: -34.5px;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFFFFF;
+    font-family: Roboto-regular;
+    font-weight: bold;
+}
+
+.img {
+    position: absolute;
+    width: 113px;
+    height: 107px;
+    left: 410px;
+    top: 12px;
+}
+
+.img#second {
+    position: absolute;
+    left: 960px;
+}
+
+.whiteBg {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 130px;
+    background: #FFFFFF;
+}
+
+.klients {
+    position: absolute;
+    color: #25678C;
+    font-size: 40px;
+    font-family: Roboto-regular;
+    top: -30px;
+    left: 678px;
+    font-weight: bold;
+}
+
+.saraksts {
+    position: absolute;
+    width: 200px;
+    height: 37px;
+    background: #FFFFFF;
+}
+
+.saraksts#a {
+    left: 467px;
+    top: 240px;
+}
+
+.saraksts#b {
+    left: 467px;
+    top: 295px;
+}
+
+.saraksts#c {
+    left: 467px;
+    top: 350px;
+}
+
+.saraksts#d {
+    left: 467px;
+    top: 405px;
+}
+
+.saraksts#e {
+    left: 467px;
+    top: 460px;
+}
+
+.saraksts#f {
+    left: 467px;
+    top: 515px;
+}
+
+.saraksts#g {
+    left: 467px;
+    top: 570px;
+}
+
+.list {
+    position: absolute;
+    font-family: Roboto-thin;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    top: -10px;
+}
+
+#vards {
+    left: 73px;
+}
+
+#nomasp {
+    left: 40px;
+}
+
+#marka {
+    left: 73px;
+}
+
+#model {
+    left: 66px;
+}
+
+#gads {
+    left: 75px;
+}
+
+#sakums {
+    left: 65px;
+}
+
+#beigas {
+    left: 67px;
+}
+
+.table .text {
+    position: absolute;
+    width: 272px;
+    height: 37px;
+    background: #FFFFFF;
+    outline: none;
+    outline-offset: none;
+    border: none;
+    font-size: 18px;
+    font-family: Roboto-thin;
+    font-weight: bold;
+    padding-inline-start: 10px;
+}
+
+#A {
+    left: 691px;
+    top: 240px;
+}
+
+#B {
+    left: 691px;
+    top: 295px;
+}
+
+#C {
+    left: 691px;
+    top: 350px; 
+}
+
+#D {
+    left: 691px;
+    top: 405px;
+}
+
+#E {
+    left: 691px;
+    top: 460px;
+}
+
+#F {
+    left: 691px;
+    top: 515px;
+}
+
+#G {
+    left: 691px;
+    top: 570px;
+}
+
+.aps {
+    position: absolute;
+    width: 250px;
+    height: 59px;
+    left: 595px;
+    top: 630px;
+    background: #FFFFFF;
+    border-radius: 34px;
+    outline: none;
+    outline-offset: none;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.accept {
+    position: absolute;
+    width: 444px;
+    height: 42px;
+    font-family: Roboto-regular;
+    font-weight: 200;
+    font-size: 23px;
+    line-height: 42px;
+    top: 680px;
+    left: 500px;
+}
+
+.check {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: #FFFFFF;
+    top: 700px;
+    left: 875px;
+}
+
+.logo {
+    position: absolute;
+    width: 200px;
+    left: 621px;
+    top: 790px;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Medium.ttf)
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(fonts/Roboto-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Roboto-thin';
+    src: url(fonts/Roboto-Thin.ttf)
+}

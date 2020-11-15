@@ -1,0 +1,128 @@
+html{
+    background-color: #BAE6FF ;
+}
+
+.blueBg {
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    left: 0px;
+    top: 0px;
+    background: #25678C;
+}
+
+.Autonoma {
+    position: absolute;
+    width: 304px;
+    height: 84px;
+    left: 600px;
+    top: -13px;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFFFFF;
+    font-family: Roboto-regular;
+}
+
+.img {
+    position: absolute;
+    width: 113px;
+    height: 107px;
+    left: 410px;
+    top: 12px;
+}
+
+.img#second {
+    position: absolute;
+    left: 960px;
+}
+
+.whiteBg {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 130px;
+    background: #FFFFFF;
+}
+
+.Ieiet {
+    position: absolute;
+    width: 95px;
+    height: 56px;
+    left: 701px;
+    top: 224px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 56px;
+    color: #000000;
+}
+
+.logIn {
+    position: absolute;
+    width: 330px;
+    height: 30px;
+    left: 560px;
+    top: 329px;
+    background: #FFFFFF;
+    border-radius: 43px;
+    padding-inline-start: 30px;
+    font-family: Roboto;
+    border: none;
+    outline: none;
+    outline-offset: none;
+}
+
+.logIn#parole {
+    top: 387px;
+}
+
+.button {
+    position: absolute;
+    width: 146px;
+    height: 57px;
+    left: 657px;
+    top: 455px;
+    background: #0063F9;
+    border-radius: 15px;
+    font-family: Roboto;
+    font-size: 24px;
+    color: #FFFFFF;
+    outline: none;
+    outline-offset: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button#konta {
+    position: absolute;
+    width: 266px;
+    height: 40px;
+    top: 533px;
+    left: 594px;
+    font-family: Roboto;
+    font-size: 19px;
+    line-height: 26px;
+    color: #FFFFFF;
+    outline: none;
+    outline-offset: none;
+}
+
+.logo {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    left: 679px;
+    top: 600px;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Medium.ttf)
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(fonts/Roboto-Regular.ttf)
+}
