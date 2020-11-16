@@ -1,7 +1,8 @@
+# 4.grupa, projekts "Autonoma"
+
 Dajra Rozonova
 Aleksandra Horta
 Annija Elīza Dreiža 
 Diana Vorohobova
 Pāvels Vasiļenko
-
-4. grupa, projekts "Autonoma"
+DP2-1
