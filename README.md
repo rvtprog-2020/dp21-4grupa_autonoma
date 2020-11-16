@@ -1,6 +1,6 @@
 # 4.grupa, projekts "Autonoma"
 
-Dajra Rozonova
+Darja Rozonova
 Aleksandra Horta
 Annija Elīza Dreiža 
 Diana Vorohobova
