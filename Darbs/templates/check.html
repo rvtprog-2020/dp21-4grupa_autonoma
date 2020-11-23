@@ -18,15 +18,22 @@
         </div>
 
             <input type="button" value="Drukāt" class="drukat">
-            <input type="button" value="Labot" class="labot">
-            <input type="button" value="Atcelt" class="atcelt">
+            <a href="/klients" {% if active_page == 'sakums' %} class='active' {% endif %}>
+                <input type="button" value="Labot" class="labot">
+            </a>
+    
+            <a href="/" {% if active_page == 'sakums' %} class='active' {% endif %}>
+                <input type="button" value="Atcelt" class="atcelt">
+            </a>
+            
 
         <div class="greyBox">
 
         </div>
 
         <img src="{{url_for('static', filename='jeep.png')}}" class="logo">
-
-        <input type="button" value="Pabeigt" class="pabeigt"> 
+        <a href="/beigas" {% if active_page == 'sakums' %} class='active' {% endif %}>
+            <input type="button" value="Pabeigt" class="pabeigt"> 
+        </a>
     </body>
 </html>

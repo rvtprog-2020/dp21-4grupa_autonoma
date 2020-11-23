@@ -42,7 +42,10 @@
         <div>
             <p class="accept">Piekrītu visiem noteikumiem</p>
             <input type="checkbox" class="check">
-            <input type="button" value="Izveidot kontu" class="vkonta">
+            <a href="/" {% if active_page == 'sakums' %} class='active' {% endif %}>
+                <input type="button" value="Izveidot kontu" class="vkonta">
+            </a>
+            
         </div>
 
         <img src="{{url_for('static', filename='jeep.png')}}" class="logo">

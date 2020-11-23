@@ -20,7 +20,9 @@
         <div class="mek">
             <p class="car">Pieejamais automobils:</p>
             <input type="search" class="serbox">
-            <input type="button" value="Meklēt" class="btn">
+            <a href="/results" {% if active_page == 'sakums' %} class='active' {% endif %}>
+                <input type="button" value="Meklēt" class="btn">
+            </a>
             <img src="{{url_for('static', filename='loupe.png')}}" class="loupe">
         </div>
 

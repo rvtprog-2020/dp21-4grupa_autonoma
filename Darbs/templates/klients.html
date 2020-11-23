@@ -62,8 +62,9 @@
                 <input type="text" class="text" id="G">
             </div>
         </div>
-
-        <input type="button" value="Apstiprināt" class="aps">
+        <a href="/check" {% if active_page == 'sakums' %} class='active' {% endif %}>
+            <input type="button" value="Apstiprināt" class="aps">
+        </a>
 
         <div>
             <p class="accept">Piekrītu visiem līguma noteikumiem</p>

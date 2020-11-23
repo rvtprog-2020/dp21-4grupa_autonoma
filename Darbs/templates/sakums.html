@@ -21,7 +21,9 @@
                 <form>
                     <input type="text" placeholder="Lietotāja vards" class="logIn">
                     <input type="password" placeholder="Parole" class="logIn" id="parole">
-                    <input type="button" value="Ok" class="button" id="button-ok">
+                    <a href="/klients" {% if active_page == 'sakums' %} class='active' {% endif %}>
+                        <input type="button" value="Ok" class="button" id="button-ok">
+                    </a>
                     <input type="button" value="Izveidot jaunu kontu" class="button" id="konta" onclick="ijk"> 
                 </form>
                 <img src="{{url_for('static', filename='jeep.png')}}" class="logo">
