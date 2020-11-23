@@ -1,21 +1,16 @@
-{% extends "search.html" %}
-
-{% set active_page = 'search' %}
-
-{% block saturs %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Search</title>
-        <link href="css/search.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
         <meta charset="UTF-8">
     </head>
 
     <body>
         <div class="blueBg">
             <p class="autonoma">Autonoma</p>
-            <img src="images/mobile.png" class="img">
-            <img src="images/mobile.png" class="img" id="second">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img" id="second">
         </div>
 
         <div class="whiteBg">
@@ -26,10 +21,9 @@
             <p class="car">Pieejamais automobils:</p>
             <input type="search" class="serbox">
             <input type="button" value="Meklēt" class="btn">
-            <img src="images/loupe.png" class="loupe">
+            <img src="{{url_for('static', filename='loupe.png')}}" class="loupe">
         </div>
 
-        <img src="images/jeep.png" class="logo">
+        <img src="{{url_for('static', filename='jeep.png')}}" class="logo">
     </body>
 </html>
-{% endblock%}

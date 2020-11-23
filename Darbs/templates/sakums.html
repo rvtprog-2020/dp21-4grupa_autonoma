@@ -3,15 +3,15 @@
     <head>
         <title>Sakums</title>
         <meta charset="UTF-8">
-        <link href="css/sakums.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/sakums.css') }}">
     </head>
     
     <body>
         <div>
             <div class="blueBg">
-            <img class="img" src="images/mobile.png">
+            <img class="img" src="{{url_for('static', filename='mobile.png')}}">
                 <h1 class="Autonoma">Sākums</h1>
-            <img class="img" id="second" src="images/mobile.png">
+            <img class="img" id="second" src="{{url_for('static', filename='mobile.png')}}">
             </div>
 
             <div class="whiteBg"></div>
@@ -24,14 +24,11 @@
                     <input type="button" value="Ok" class="button" id="button-ok">
                     <input type="button" value="Izveidot jaunu kontu" class="button" id="konta" onclick="ijk"> 
                 </form>
-                <img src="images/jeep.png" class="logo">
+                <img src="{{url_for('static', filename='jeep.png')}}" class="logo">
             </div>
         </div>
-        <a href="registration.html">
+        <a href="/register" {% if active_page == 'sakums' %} class='active' {% endif %}>
             <input type="button" value="Izveidot jaunu kontu" class="button" id="konta">
         </a>
-        <div id="users">
-
-        </div>
     </body>
 </html>

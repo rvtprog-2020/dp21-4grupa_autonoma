@@ -37,11 +37,11 @@ def editUser(id):
 def sakums():
     return render_template('sakums.html')
 
-@app.route('/registration')
+@app.route('/register')
 def registration():
     return render_template('registration.html')
 
-@app.route('/administrators')
+@app.route('/admin')
 def admin():
     return render_template('admin.html')    
 

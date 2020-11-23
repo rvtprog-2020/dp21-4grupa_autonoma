@@ -1,21 +1,16 @@
-{% extends "klients.html" %}
-
-{% set active_page = 'klients' %}
-
-{% block saturs %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Klients</title>
         <meta charset="UTF-8">
-        <link href="css/klients.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/klients.css') }}">
     </head>
 
     <body>
         <div class="blueBg">
             <p class="autonoma">Autonoma</p>
-            <img src="images/mobile.png" class="img">
-            <img src="images/mobile.png" class="img" id="second">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img" id="second">
         </div>
 
         <div class="whiteBg">
@@ -75,7 +70,6 @@
             <input type="checkbox" class="check">
         </div>
 
-        <img src="images/jeep.png" class="logo">
+        <img src="{{url_for('static', filename='jeep.png')}}" class="logo">
     </body>
 </html>
-{% endblock%}

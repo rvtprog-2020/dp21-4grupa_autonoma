@@ -1,29 +1,23 @@
-{% extends "beigas.html" %}
-
-{% set active_page = 'beigas' %}
-
-{% block saturs %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Beigas</title>
         <meta charset="UTF-8">
-        <link href="css/beigas.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/beigas.css') }}">
     </head>
 
     <body>
         <div class="blueBg">
             <p class="autonoma">Autonoma</p>
-            <img src="images/mobile.png" class="img">
-            <img src="images/mobile.png" class="img" id="second">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img" id="second">
         </div>
 
         <div class="whiteBg">
             
         </div>
 
-        <img src="images/paldiesParSadarbibu.png" class="paldies">
-        <img src="images/jeep.png" class="logo">
+        <img src="{{url_for('static', filename='paldiesParSadarbibu.png')}}" class="paldies">
+        <img src="{{url_for('static', filename='jeep.png')}}" class="logo">
     </body>
 </html>
-{% endblock%}

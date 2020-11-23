@@ -1,21 +1,16 @@
-{% extends "check.html" %}
-
-{% set active_page = 'check' %}
-
-{% block saturs %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Check</title>
-        <link href="css/check.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/check.css') }}">
         <meta charset="UTF-8">
     </head>
 
     <body>
         <div class="blueBg">
             <p class="autonoma">Autonoma</p>
-            <img src="images/mobile.png" class="img">
-            <img src="images/mobile.png" class="img" id="second">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img" id="second">
         </div>
 
         <div class="whiteBg">
@@ -30,9 +25,8 @@
 
         </div>
 
-        <img src="images/jeep.png" class="logo">
+        <img src="{{url_for('static', filename='jeep.png')}}" class="logo">
 
         <input type="button" value="Pabeigt" class="pabeigt"> 
     </body>
 </html>
-{% endblock%}
