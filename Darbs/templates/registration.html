@@ -1,21 +1,16 @@
-{% extends "registration.html" %}
-
-{% set active_page = 'registration' %}
-
-{% block saturs %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Registration</title>
         <meta charset="UTF-8">
-        <link href="css/registration.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/registration.css') }}">
     </head>
 
     <body>
         <div class="blueBg">
             <p class="autonoma">Autonoma</p>
-            <img src="images/mobile.png" class="img">
-            <img src="images/mobile.png" class="img" id="second">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img" id="second">
         </div>
 
         <div class="whiteBg">
@@ -47,12 +42,12 @@
         <div>
             <p class="accept">Piekrītu visiem noteikumiem</p>
             <input type="checkbox" class="check">
-            <a href="sakums.html">
+            <a href="/" {% if active_page == 'sakums' %} class='active' {% endif %}>
                 <input type="button" value="Izveidot kontu" class="vkonta">
             </a>
+            
         </div>
 
-        <img src="images/jeep.png" class="logo">
+        <img src="{{url_for('static', filename='jeep.png')}}" class="logo">
     </body>
 </html>
-{% endblock%}

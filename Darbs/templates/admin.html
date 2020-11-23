@@ -1,21 +1,16 @@
-{% extends "admin.html" %}
-
-{% set active_page = 'administrators' %}
-
-{% block saturs %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="css/admin.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
         <title>Admin</title>
     </head>
     
     <body>
         <div class="blueBg">
             <p class="autonoma">Autonoma</p>
-            <img src="images/mobile.png" class="img">
-            <img src="images/mobile.png" class="img" id="second">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img" id="second">
         </div>
 
         <div class="whiteBg">
@@ -92,4 +87,3 @@
         <img src="images/jeep.png" class="logo">
     </body>
 </html>
-{% endblock%}

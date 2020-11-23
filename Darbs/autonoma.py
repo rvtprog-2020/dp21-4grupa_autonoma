@@ -8,6 +8,10 @@ def js():
     return render_template('javaScript.html')
 
 
+@app.route('/registration')
+def jaunskonts():
+    return render_template('registration')
+
 
 @app.route('/users')
 def user():
@@ -33,11 +37,11 @@ def editUser(id):
 def sakums():
     return render_template('sakums.html')
 
-@app.route('/registration')
+@app.route('/register')
 def registration():
     return render_template('registration.html')
 
-@app.route('/administrators')
+@app.route('/admin')
 def admin():
     return render_template('admin.html')    
 

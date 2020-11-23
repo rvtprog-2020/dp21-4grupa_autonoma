@@ -1,21 +1,16 @@
-{% extends "search_result.html" %}
-
-{% set active_page = 'results' %}
-
-{% block saturs %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Search result</title>
         <meta charset="UTF-8">
-        <link href="css/search_result.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/search_result.css') }}">
     </head>
 
     <body>
         <div class="blueBg">
             <p class="autonoma">Autonoma</p>
-            <img src="images/mobile.png" class="img">
-            <img src="images/mobile.png" class="img" id="second">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img">
+            <img src="{{url_for('static', filename='mobile.png')}}" class="img" id="second">
         </div>
 
         <div class="whiteBg">
@@ -24,11 +19,10 @@
 
         <input type="search" class="serbox">
         <input type="button" value="Meklēt" class="btn">
-        <img src="images/loupe.png" class="loupe">
+        <img src="{{url_for('static', filename='loupe.png')}}" class="loupe">
 
         <div class="whiteBox">
             
         </div>
     </body>
 </html>
-{% endblock%}
