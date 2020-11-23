@@ -8,10 +8,6 @@ def js():
     return render_template('javaScript.html')
 
 
-@app.route('/registration')
-def jaunskonts():
-    return render_template('registration')
-
 
 @app.route('/users')
 def user():
