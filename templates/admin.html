@@ -20,15 +20,38 @@
         <div>
             <div class="box" id="one">
                <p class="nomasp">Nomas punkts</p> 
+               <select id="style" onchange="filter_changed()">
+                 <option value="">Nomas punkts: </option>
+                 <option>Rīga</option>
+                 <option>Liepāja</option>
+                 <option>Jūrmala</option>
+                 <option>Ogre</option>
+               </select>
             </div>
+               
             <div class="box" id="two">
                 <p class="marka">Marka</p>
+                <select id="style" onchange="filter_changed()">
+                    <option value="">Marka: </option>
+                    <option>BMW</option>
+                    <option>Audi</option>
+                    <option>Opel</option>
+                    <option>Wolkswagen</option>
+                </select>
             </div>
             <div class="box" id="three">
                 <p class="modelis">Modelis</p>
+                
             </div>
             <div class="box" id="four">
                 <p class="gads">Gads</p>
+                <select id="style" onchange="filter_changed()">
+                    <option value="">Gads: </option>
+                    <option>2003</option>
+                    <option>2006</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                </select>
             </div>
             <div class="box" id="five">
                 <p class="cena">Cena</p>
@@ -67,7 +90,7 @@
         <div class="greybox">
             <p class="auto">Automobils</p>
             <p class="auto" id="seconda">Automobils</p>
-            <p class="rezerv">Klienta rezervacijas nr.</p>
+            <p class="rezerv" id="random-number">Klienta rezervacijas nr.</p>
             <p class="navrezerv">Nav rezervets</p>
             <input type="button" value="Labot" class="btn">
             <input type="button" value="Labot" class="btn" id="secondb">
@@ -82,8 +105,10 @@
         </div>
 
         <input type="button" value="Pievienot" class="piev">
-        <input type="button" value="Atcelt" class="piev" id="seconde">
-
+        <a href="/sakums" {% if active_page == 'sakums' %} class='active' {% endif %}>
+            <input type="button" value="Atcelt" class="piev" id="seconde">
+        </a>
         <img src="{{url_for('static', filename='jeep.png')}}" class="logo">
-    </body>
+        <script type="text/javascript" src="dp21-4grupa_autonoma\custom.js"></script>
+    </body> 
 </html>
