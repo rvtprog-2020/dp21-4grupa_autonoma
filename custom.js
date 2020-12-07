@@ -1,13 +1,24 @@
-window.addEventListener('load',function(){
-    
+window.addEventListener("load", function(){
+    getUsers();
 })
 
-if (parole = "admin") {
-    if (lietotajs = "admin") {
-        pageRedirect()
+async function getUsers(){
+    let response = await fetch('/users')
+    let data = await response.json()
+
+    console.log(data)
+    let users = document.getElementById('users')
+    users.innerHTML = ''
+
+    for(let user of data){
+        msgHTML = `<p>Vards: ${user.vards} Uzvards: ${user.uzvards} </p><button type='button' onClick="editUser(${user.id})">Edit</button>`
+        users.innerHTML = users.innerHTML + msgHTML
     }
 }
 
-function pageRedirect(){
-    window.location.replace("admin.html")
+async function editUser(id){
+    let response = await fetch(`/user/${id}`)
+    let data = await response.json()
+
+    console.log(data)
 }
