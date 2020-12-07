@@ -1,26 +1,26 @@
 from flask import Flask, render_template, request
-from flask import Flask, render_template, request
 from pymongo import MongoClient
 from bson.json_util import dumps
-import chats
 
 # SXgTI6vDjQJsAa7f
 
-client = MongoClient("")
 app = Flask(__name__)
+
+app.secretkey = "hkIbg#45f1"
+
+client = MongoClient("mongodb+srv://user1:VhAbV7LpTGAcQtTK@cluster0.qd271.mongodb.net/pirozhok?retryWrites=true&w=majority")
+db = client.test
 
 # Datubazes
 db = client.myproject
 
 # Tabulas/Dokumenti
 users_db = db.users
-preces_db = db.preces
 
 # Pirmreizeja datu ievietosana
 admin1 = {"id":"1", "vards":"Pavels","uzvards":"Vasilenko"}
-user0 = {"id":"0", "vards":"Aleksandra","uzvards":"Horta"}
 
-users_db.insert_many([user1, user2])
+users_db.insert_one(admin1)
 
 
 
