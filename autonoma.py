@@ -8,6 +8,8 @@ app = Flask(__name__)
 
 app.secretkey = "hkIbg#45f1"
 
+# VhAbV7LpTGAcQtTK
+
 client = MongoClient("mongodb+srv://user1:VhAbV7LpTGAcQtTK@cluster0.qd271.mongodb.net/pirozhok?retryWrites=true&w=majority")
 db = client.test
 

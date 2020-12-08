@@ -78,8 +78,3 @@ function compare(node, filter, comparer){
     }
 }
 
-
-// Randoma skaitlis
-window.onload = function() {
-    document.getElementById("random-number").innerHTML = Math.random(); 
-};

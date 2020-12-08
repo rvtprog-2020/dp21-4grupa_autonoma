@@ -41,12 +41,23 @@
             </div>
             <div class="box" id="three">
                 <p class="modelis">Modelis</p>
-                
+                <select id="style" onchange="filter_changed()">
+                    <option value="">Modelis: </option>
+                    <option>A4</option>
+                    <option>A5</option>
+                    <option>X5 (E53)</option>
+                    <option>X6</option>
+                    <option>Zafira</option>
+                    <option>Astra</option>
+                    <option>Golf</option>
+                    <option>Passat (B5)</option>
+                </select>
             </div>
             <div class="box" id="four">
                 <p class="gads">Gads</p>
                 <select id="style" onchange="filter_changed()">
                     <option value="">Gads: </option>
+                    <option>1999</option>
                     <option>2003</option>
                     <option>2006</option>
                     <option>2008</option>
@@ -103,9 +114,10 @@
         <div class="greybox" id="secondd">
 
         </div>
-
-        <input type="button" value="Pievienot" class="piev">
-        <a href="/sakums" {% if active_page == 'sakums' %} class='active' {% endif %}>
+        <a href="/" {% if active_page == 'sakums' %} class='active' {% endif %}>
+            <input type="button" value="Pievienot" class="piev">
+        </a>
+        <a href="/" {% if active_page == 'sakums' %} class='active' {% endif %}>
             <input type="button" value="Atcelt" class="piev" id="seconde">
         </a>
         <img src="{{url_for('static', filename='jeep.png')}}" class="logo">
