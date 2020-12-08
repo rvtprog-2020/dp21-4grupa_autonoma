@@ -47,57 +47,6 @@ html{
     background: #FFFFFF;
 }
 
-.seacrh {
-    position: absolute;
-    color: #25678C;
-    font-size: 40px;
-    font-family: Roboto-regular;
-    top: -30px;
-    left: 690px;
-    font-weight: bold;
-}
-
-.serbox {
-    position: absolute;
-    width: 393px;
-    height: 61px;
-    left: 20px;
-    top: 215px;
-    background: #FFFFFF;
-    border-radius: 43px;
-    outline: none;
-    outline-offset: none;
-    border: none;
-    padding-inline-start: 80px;
-    font-size: 30px;
-}
-
-.btn {
-    position: absolute;
-    width: 116px;
-    height: 58px;
-    left: 440px;
-    top: 215px;
-    background: #0063F9;
-    border-radius: 15px;
-    font-family: Roboto-thin;
-    font-weight: 600;
-    font-size: 24px;
-    text-align: center;
-    color: white;
-    outline: none;
-    outline-offset: none;
-    border: none;
-    cursor: pointer;
-}
-
-.loupe {
-    position: absolute;
-    width: 37px;
-    height: 37px;
-    left: 50px;
-    top: 227px;
-}
 
 .whiteBox {  
     position: absolute;

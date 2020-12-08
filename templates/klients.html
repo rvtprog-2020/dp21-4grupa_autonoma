@@ -72,6 +72,9 @@
             <div class="saraksts" id="g">
                 <p class="list" id="beigas">Beigas</p>
             </div>
+            <div class="saraksts" id="h">
+                <p class="list" id="rezervacija">Rezervācijas Nr. </p>
+            </div>
 
             <div class="table">
                 <input type="text" class="text" id="A">
@@ -90,12 +93,17 @@
             </div>
             <div class="table">
                 <input type="text" class="text" id="F">
+                <p style="color: black;">(dd.mm.gggg hh:mm)</p>
             </div>
             <div class="table">
                 <input type="text" class="text" id="G">
+                <p style="color: black;">(dd.mm.gggg hh:mm)</p>
+            </div>
+            <div class="table">
+                <input type="text" class="text" id="H"> <!--+Generate random-->
             </div>
         </div>
-        <a href="/check" {% if active_page == 'sakums' %} class='active' {% endif %}>
+        <a href="/results" {% if active_page == 'sakums' %} class='active' {% endif %}>
             <input type="button" value="Apstiprināt" class="aps">
         </a>
 

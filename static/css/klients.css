@@ -98,6 +98,11 @@ html{
     top: 570px;
 }
 
+.saraksts#h {
+    left: 467px;
+    top: 570px;
+}
+
 .list {
     position: absolute;
     font-family: Roboto-thin;
@@ -133,6 +138,10 @@ html{
 
 #beigas {
     left: 67px;
+}
+
+#rezervacija{
+    left: 70px;
 }
 
 .table .text {
@@ -180,6 +189,11 @@ html{
 }
 
 #G {
+    left: 691px;
+    top: 570px;
+}
+
+#H {
     left: 691px;
     top: 570px;
 }

@@ -70,9 +70,6 @@ def registration():
 def admin():
     return render_template('admin.html')    
 
-@app.route('/search')
-def search():
-    return render_template('search.html')
 
 @app.route('/results')
 def search_result():
