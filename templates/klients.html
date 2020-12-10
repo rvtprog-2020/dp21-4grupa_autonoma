@@ -19,11 +19,11 @@
 
         <div>
             <div class="saraksts" id="a">
-                <p class="list" id="vards">Vards</p>
+                <p class="list" id="vards">Vārds</p>
             </div>
             <div class="saraksts" id="b">
                 <p class="list" id="nomasp">Nomas punkts</p>
-                <select id="style" onchange="filter_changed()">
+                <select id="style" class="text" onchange="filter_changed()">
                     <option value="">Nomas punkts: </option>
                     <option>Rīga</option>
                     <option>Liepāja</option>
@@ -33,7 +33,7 @@
             </div>
             <div class="saraksts" id="c">
                 <p class="list" id="marka">Marka</p>
-                <select id="style" onchange="filter_changed()">
+                <select id="style" class="text" onchange="filter_changed()">
                     <option value="">Marka: </option>
                     <option>BMW</option>
                     <option>Audi</option>
@@ -43,7 +43,7 @@
             </div>
             <div class="saraksts" id="d">
                 <p class="list" id="model">Modelis</p>
-                <select id="style" onchange="filter_changed()">
+                <select id="style" class="text" onchange="filter_changed()">
                     <option value="">Modelis: </option>
                     <option>A4</option>
                     <option>A5</option>
@@ -57,7 +57,7 @@
             </div>
             <div class="saraksts" id="e">
                 <p class="list" id="gads">Gads</p>
-                <select id="style" onchange="filter_changed()">
+                <select id="style" class="text" onchange="filter_changed()">
                     <option value="">Gads: </option>
                     <option>1999</option>
                     <option>2003</option>
@@ -80,20 +80,8 @@
                 <input type="text" class="text" id="A">
             </div>
             <div class="table">
-                <input type="text" class="text" id="B">
-            </div>
-            <div class="table">
-                <input type="text" class="text" id="C">
-            </div>
-            <div class="table">
-                <input type="text" class="text" id="D">
-            </div>
-            <div class="table">
-                <input type="text" class="text" id="E">
-            </div>
-            <div class="table">
                 <input type="text" class="text" id="F">
-                <p style="color: black;">(dd.mm.gggg hh:mm)</p>
+                <p style="color: black;" class="data">(dd.mm.gggg hh:mm)</p>
             </div>
             <div class="table">
                 <input type="text" class="text" id="G">
