@@ -68,14 +68,64 @@ html{
 
 select {
     position: absolute;
-    width: 431px;
+    width: 350px;
     height: 49px;
-    left: 343px;
+    left: 322px;
     background: #FFFFFF;
     font-size: 24px;
     font-family: Roboto-regular;
     border: #FFFFFF;
     line-height: 28px;
+}
+
+.delete {
+    position: absolute;
+    left: 1030px;
+    top: 255px;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 5px;
+    color:white;
+    font-size: 35px;
+    border: none;
+    }
+
+#button-2 {
+    top: 324px;
+}
+
+#button-3 {
+    top: 394px;
+}
+
+#button-4 {
+    top: 463px;
+}
+
+.new {
+    position: absolute;
+    left: 788px;
+    top: 250px;
+    width: 218px;
+    height: 49px;
+    font-size: 20px;
+    border: none;
+    padding-inline-start: 5px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+#input-2 {
+    top: 320px;
+}
+
+#input-3 {
+    top: 390px;
+}
+
+#input-4 {
+    top: 460px;
 }
 
 .box#two {
@@ -186,9 +236,9 @@ select {
 
 .box#ten {
     position: absolute;
-    width: 431px;
+    width: 350px;
     height: 49px;
-    left: 442px;
+    left: 421px;
     top: 530px;
     background: #FFFFFF;
 }
@@ -314,7 +364,7 @@ select {
     position: absolute;
     width: 372px;
     height: 55px;
-    left: 974px;
+    left: 1100px;
     top: 290px;
     background: #0063F9;
     border-radius: 31px;
