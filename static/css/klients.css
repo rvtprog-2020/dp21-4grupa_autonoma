@@ -100,7 +100,7 @@ html{
 
 .saraksts#h {
     left: 467px;
-    top: 570px;
+    top: 625px;
 }
 
 .list {
@@ -110,41 +110,11 @@ html{
     color: #000000;
     font-weight: bold;
     top: -10px;
+    width:200px;
+    text-align:center;
 }
 
-#vards {
-    left: 73px;
-}
-
-#nomasp {
-    left: 40px;
-}
-
-#marka {
-    left: 73px;
-}
-
-#model {
-    left: 66px;
-}
-
-#gads {
-    left: 75px;
-}
-
-#sakums {
-    left: 65px;
-}
-
-#beigas {
-    left: 67px;
-}
-
-#rezervacija{
-    left: 70px;
-}
-
-.table .text {
+.text {
     position: absolute;
     width: 272px;
     height: 37px;
@@ -156,6 +126,9 @@ html{
     font-family: Roboto-thin;
     font-weight: bold;
     padding-inline-start: 10px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 #A {
@@ -163,24 +136,9 @@ html{
     top: 240px;
 }
 
-#B {
-    left: 691px;
-    top: 295px;
-}
-
-#C {
-    left: 691px;
-    top: 350px; 
-}
-
-#D {
-    left: 691px;
-    top: 405px;
-}
-
-#E {
-    left: 691px;
-    top: 460px;
+#style {
+    width: 282px;
+    left: 224px;
 }
 
 #F {
@@ -195,7 +153,7 @@ html{
 
 #H {
     left: 691px;
-    top: 570px;
+    top: 625px;
 }
 
 .aps {
@@ -203,7 +161,7 @@ html{
     width: 250px;
     height: 59px;
     left: 595px;
-    top: 630px;
+    top: 685px;
     background: #FFFFFF;
     border-radius: 34px;
     outline: none;
@@ -225,7 +183,7 @@ html{
     font-weight: 200;
     font-size: 23px;
     line-height: 42px;
-    top: 680px;
+    top: 735px;
     left: 500px;
 }
 
@@ -234,7 +192,7 @@ html{
     width: 42px;
     height: 42px;
     background: #FFFFFF;
-    top: 700px;
+    top: 755px;
     left: 875px;
 }
 
@@ -242,7 +200,7 @@ html{
     position: absolute;
     width: 200px;
     left: 621px;
-    top: 790px;
+    top: 845px;
 }
 
 @font-face {
