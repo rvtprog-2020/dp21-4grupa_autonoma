@@ -47,12 +47,22 @@ html{
     background: #FFFFFF;
 }
 
+.search {
+    position: absolute;
+    color: #25678C;
+    font-size: 40px;
+    font-family: Roboto-regular;
+    top: -30px;
+    left: 678px;
+    font-weight: bold;
+}
+
 
 .whiteBox {  
     position: absolute;
-    width: 1360px;
     height: 601px;
     left: 37px;
+    right: 37px;
     top: 295px;
     background: #FFFFFF;
 }
