@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css')}}">
+    {% block link %}{% endblock %}
+    <title>Car rental</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <h4>Car rental</h4>
+        <ul>
+            <li><a href="/">Login</a></li>
+        </ul>
+        <ul>
+            <li><a href="/register">Register</a></li>
+        </ul>
+        <ul>
+            <li><a href="/panel">Panel</a></li>
+        </ul>
+        <ul>
+            <li><a href="/cars">Cars</a></li>
+        </ul>
+        <ul>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+        <ul>
+            <li><div class="logined">
+                <p>Hello: {{user_text}}!</p>
+            </li></div>
+        </ul>
+    </div>
+    {% block body %}{% endblock %}
+</body>
+</html>

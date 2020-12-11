@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="login">
+        <div class="logo">
+            <h1>Hello! Welcome to the car rental</h1>
+        </div>
+        <form action="" method="POST">
+            <p>Login</p>
+            <div class="flash">
+              {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                  {% for msg in messages %}
+                    <p>{{msg}}</p>
+                  {% endfor %}
+                {% endif %}
+              {% endwith %}
+            </div>
+            <input type="text" name="login" placeholder="E-mail or Login"><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <input type="submit" value="Login">
+        </form>
+        <div class="register">
+            <p>Or you can register a new account</p>
+            <a href="/register">Let's start!</a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/who-customer.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>User who buy a car: {{car}}</h1>
+    <h2>Name: {{name}}</h2>
+    <h2>Email: {{email}}</h2>
+</div>
+{% endblock %}

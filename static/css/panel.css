@@ -1,0 +1,55 @@
+.form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form form input{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.from form p {
+    margin: 0;
+}
+
+.flash {
+    margin-bottom: 10px;
+    color: red;
+}
+
+.ul {
+    margin: 50px;
+}
+
+.image {
+    position: absolute;
+    border-radius: 50%;
+    width: 126px;
+}
+
+h2 {
+    margin-left: 150px;
+    font-weight: normal;
+}
+
+.border {
+    margin-bottom: 50px;
+    padding: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;;
+}
+
+.button {
+    text-align: right;
+}
+
+.button a {
+    margin-left: 5px;
+}
+
+h1 {
+    color: red;
+    font-weight: normal;
+    margin-top: 20px;
+}

@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration:none;
+    list-style-type: none;
+}
+
+.logined {
+    float: right;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    max-height: 20px;
+}
+
+.nav-bar ul li {
+    margin-left: 15px;
+}
+
+.nav-bar ul li a{
+    color: blue;
+}
+
+.nav-bar ul li a:hover{
+    color: rgba(0, 0, 255, 0.7);
+}
