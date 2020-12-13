@@ -1,3 +1,7 @@
+body {
+    font-size: 18px;
+}
+
 .form {
     margin-top: 50px;
     text-align: center;
@@ -52,4 +56,48 @@ h1 {
     color: red;
     font-weight: normal;
     margin-top: 20px;
+}
+
+#button {
+    width:90px;
+    height:45px;
+    background-color: #0063F9;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    outline:none;
+}
+
+#button:hover {
+    background-color: #0040a0;
+    cursor: pointer;
+}
+
+.input:focus {
+    box-shadow: 0px 0px 5px rgb(94, 94, 94);
+}
+
+.input {
+    display: inline-block;
+    max-width:350px;
+    height:35px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    padding-left: 5px;
+    outline:none;
+    margin: 0px 5px;
+    font-size: 16px;
+}
+
+.label {
+    display: inline-block;
+    width: 150px;
+    height:35px;
+    line-height: 35px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px 0px;
 }

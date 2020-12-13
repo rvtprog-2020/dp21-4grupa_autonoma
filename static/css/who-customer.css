@@ -3,10 +3,29 @@
     text-align: center;
 }
 
-.container h2 {
-    font-weight: normal;
+.label {
+    display: inline-block;
+    width: 250px;
+    height:45px;
+    line-height: 45px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 18px;
 }
 
-.container h1 {
-    font-weight: normal;
+.info {
+    display: inline-block;
+    width: 350px;
+    height:45px;
+    line-height: 45px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.n1 {
+    font-size: 22px;
+    font-weight: 600;
 }

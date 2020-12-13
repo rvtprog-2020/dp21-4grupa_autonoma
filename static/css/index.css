@@ -1,5 +1,9 @@
+body {
+    font-size: 20px;
+}
+
 .login {
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -14,7 +18,11 @@ form input{
 }
 
 .register {
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+p {
+    margin-bottom: 10px;
 }
 
 .logo {
@@ -23,4 +31,41 @@ form input{
 
 .logo h1 {
     font-weight: normal;
+}
+
+#button {
+    width:90px;
+    height:45px;
+    background-color: #0063F9;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    outline:none;
+}
+
+#button:hover {
+    background-color: #0040a0;
+    cursor: pointer;
+}
+
+.input {
+    width:240px;
+    height:40px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    padding-left: 5px;
+    outline:none;
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+.input:focus {
+    box-shadow: 0px 0px 5px rgb(94, 94, 94);
+}
+
+.register a:hover {
+    text-decoration: underline;
 }
