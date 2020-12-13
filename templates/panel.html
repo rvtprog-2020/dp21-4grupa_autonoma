@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block body %}
+<div class="white"><p>Panel</p></div>
 <div class="form">
     <form action="" method="POST">
         <div class="flash">
@@ -17,17 +18,17 @@
               {% endif %}
             {% endwith %}
         </div>
-        <label>Nomas punkts: </label><br>
-        <input size="50" placeholder="Riga" type="text" name="place"><br>
-        <label>Marka: </label><br>
-        <input size="50" placeholder="BMW" type="text" name="marka"><br>
-        <label>Modelis: </label><br>
-        <input size="50" placeholder="X5" type="text" name="model"><br>
-        <label>Gads: </label><br>
-        <input size="50" placeholder="2008" type="text" name="year"><br>
-        <label>1x1 Image: </label><br>
-        <input size="50" placeholder="www.exampla.com/example.png" type="text" name="img"><br>
-        <input size="50" type="submit" value="Submit">
+        <div class="label"><label>Nomas punkts: </label></div>
+        <input size="50" placeholder="Riga" type="text" name="place" class="input"><br>
+        <div class="label"><label>Marka: </label></div>
+        <input size="50" placeholder="BMW" type="text" name="marka" class="input"><br>
+        <div class="label"><label>Modelis: </label></div>
+        <input size="50" placeholder="X5" type="text" name="model" class="input"><br>
+        <div class="label"><label>Gads: </label></div>
+        <input size="50" placeholder="2008" type="text" name="year" class="input"><br>
+        <div class="label"><label>1x1 Image: </label></div>
+        <input size="50" placeholder="www.exampla.com/example.png" type="text" name="img" class="input"><br>
+        <input size="50" type="submit" value="Submit" id="button">
     </form>
 </div>
 
