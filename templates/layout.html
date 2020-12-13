@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css')}}">
     {% block link %}{% endblock %}
-    <title>Car rental</title>
+    <title>Autonoma</title>
 </head>
 <body>
     <div class="nav-bar">
-        <h4 id="header">Car rental</h4>
+        <h4 id="header">Autonoma</h4>
         <ul>
             <li><a href="/">Login</a></li>
         </ul>
         <ul>
-            <li><a href="/register">Register</a></li>
+            <li><a href="/register">Reģistrācija</a></li>
         </ul>
         <ul>
-            <li><a href="/panel">Panel</a></li>
+            <li><a href="/panel">Panelis</a></li>
         </ul>
         <ul>
-            <li><a href="/cars">Cars</a></li>
+            <li><a href="/cars">Mašīnas</a></li>
         </ul>
         <ul>
             <li><a href="/logout">Logout</a></li>
         </ul>
         <ul>
             <li><div class="logined">
-                <p>Hello: {{user_text}}!</p>
+                <p>Landien: {{user_text}}!</p>
             </li></div>
         </ul>
     </div>

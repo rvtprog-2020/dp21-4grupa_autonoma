@@ -28,7 +28,7 @@ def cars():
     if 'admin' in session or 'user' in session:
         return render_template('cars.html', user_text=user_text)
     else:
-        flash("Please, login")
+        flash("Lūdzu, ieiet")
         return redirect(url_for("index"))
 
 @app.route('/data')
@@ -49,21 +49,21 @@ def index():
         login = request.form['login']
         password = request.form['password']
         if "admin" in session or "user" in session:
-            flash("You alredy logined")
+            flash("Jūs jau esat iegājuši")
             return render_template('index.html', user_text=user_text)
         if login == "admin" and password == "admin":
             session['admin'] = "admin"
             return redirect(url_for("panel"))
         user_database = users_database.find_one({"login":login})
         if user_database == None:
-            flash("Password or login is not correct")
+            flash("Parole vai e-pasts nav pareizs!")
             return render_template('index.html', user_text=user_text)
         if login == user_database['login'] and password == user_database['password']:
             session['user'] = login
-            flash("You are logined")
+            flash("Jūs esat iegājuši")
             return render_template('index.html', user_text=login)
         else:
-            flash("Password or login is not correct")
+            flash("Parole vai e-pasts nav pareizs!")
             return render_template('index.html', user_text=user_text)
     else:
         return render_template('index.html', user_text=user_text)
@@ -84,19 +84,19 @@ def panel():
             year = request.form['year']
             img = request.form['img']
             if place == "" or marka == "" or model == "" or year == "" or img == "":
-                flash("Input all boxes")
+                flash("Ievadiet visu informāciju")
                 return render_template('panel.html', user_text=user_text)
             else:
                 random_int = randint(999,999999)
                 data = {"id":random_int,"place":place,"marka":marka,"model":model,"year":year,"img":img,"buy":True}
                 cars_database.insert_one(data)
-                flash("Done")
+                flash("Gatavs!")
                 return render_template('panel.html', user_text=user_text)
 
         else:
             return render_template('panel.html', user_text=user_text)
     else:
-        flash("You are not an admin")
+        flash("Jūs neesat admins!")
         return redirect(url_for("index"))
 
 @app.route("/panel/buy/<int:id>", methods=["GET","POST"])
@@ -165,17 +165,17 @@ def register():
         user_text = "user"
     if request.method == "POST":
         if 'user' in session or 'admin' in session:
-            flash("You alredy logined")
+            flash("Jūs jau esat iegājuši")
             return render_template('register.html', user_text=user_text)
         login = request.form['login']
         name = request.form['name']
         password = request.form['password']
         if login == "" or name == "" or password == "":
-            flash("Please, input all boxes")
+            flash("Lūdzu, ievadiet visu informāciju")
             return render_template('register.html', user_text=user_text)
         data = {"login":login,"name":name,"password":password,"buy":0}
         users_database.insert_one(data)
-        flash("Registration has been successful")
+        flash("Reģistrācija ir veiksmīga!")
         return redirect(url_for("index"))
     else:
         return render_template('register.html', user_text=user_text)
@@ -184,7 +184,7 @@ def register():
 def logout():
     session.pop("admin", None)
     session.pop("user", None)
-    flash("You successfuly logout")
+    flash("Jūs veiksmīgi izgājāt no sava konta")
     return redirect(url_for("index"))
 
 if __name__ == "__main__":
