@@ -55,6 +55,10 @@ h2 {
     margin-left: 5px;
 }
 
+.button a:hover {
+    text-decoration: underline;
+}
+
 h1 {
     color: red;
     font-weight: normal;
