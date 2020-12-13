@@ -9,13 +9,18 @@ app.secret_key = "rTf45as(rw2Ew_"
 # login
 # TkD0nfEVDOyNk3Bp
 
+# Mongo klienta pievienošana. 
+
 client = MongoClient("mongodb+srv://login:TkD0nfEVDOyNk3Bp@cluster0.qd271.mongodb.net/database?retryWrites=true&w=majority")
 
+# Informācija par divām datubāzēm
 db = client.users
 users_database = db.users_info
 
 db = client.cars
 cars_database = db.cars_info
+
+# Panels, kura lietotājs var izveleties sev transportu.
 
 @app.route('/cars', methods=["GET","POST"])
 def cars():
@@ -36,6 +41,8 @@ def data():
     cars = cars_database.find()
     data = list(cars)
     return dumps(data)
+
+# Ielogošana saitē. Ir divi lietotāju veidi, kuri var darboties saitē, vai nu parasts users, vai nu admins. Ir arī iespēja reģistreties saitē. 
 
 @app.route('/', methods=["GET","POST"])
 def index():
@@ -68,6 +75,8 @@ def index():
     else:
         return render_template('index.html', user_text=user_text)
 
+# Panelis paredzēts adminam. Šeit viņš var pievienot jaunu automobili vai noņemt.
+
 @app.route('/panel', methods=["GET","POST"])
 def panel():
     if 'user' in session:
@@ -99,6 +108,8 @@ def panel():
         flash("Jūs neesat admins!")
         return redirect(url_for("index"))
 
+# Šeit admins var apskatīt klientus (pircējus). Tā informacija tiek aizsargāta no parastiem useriem, tie nevar to apskaitīt, jo nav pieejams.
+
 @app.route("/panel/buy/<int:id>", methods=["GET","POST"])
 def customer(id):
     if 'user' in session:
@@ -121,6 +132,8 @@ def customer(id):
     else:
         return redirect(url_for("index"))
 
+# Šeit userim parādās visa informācija par nopirkto transportu. 
+
 @app.route("/cars/buy/<int:id>", methods=["GET","POST"])
 def buy(id):
     if 'user' in session:
@@ -141,6 +154,8 @@ def buy(id):
     else:
         return redirect(url_for("index"))
 
+# Šeit admins var nodzēst automobiļi no saraksta. 
+
 @app.route("/panel/delete/<int:id>", methods=["GET","POST"])
 def delete(id):
     if 'user' in session:
@@ -154,6 +169,8 @@ def delete(id):
         return redirect(url_for("panel"))
     else:
         return redirect(url_for("index"))
+
+# Reģistracija
 
 @app.route('/register', methods=["GET","POST"])
 def register():
@@ -179,6 +196,8 @@ def register():
         return redirect(url_for("index"))
     else:
         return render_template('register.html', user_text=user_text)
+
+# Izeja no saites
 
 @app.route('/logout', methods=["GET","POST"])
 def logout():

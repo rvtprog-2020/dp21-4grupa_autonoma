@@ -11,6 +11,8 @@ async function getPosts(){
 
     for(let post of data){
 
+        /* Tas ir mašinas izvele useram. Parada vai mašina ir pieiejama, vai nē */
+        
         if (post.buy == false) {
             console.log("None")
         } else {
